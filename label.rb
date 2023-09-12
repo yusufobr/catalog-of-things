@@ -1,3 +1,5 @@
+require_relative 'item'
+
 class Label
   attr_reader :id, :title, :color, :items
 
