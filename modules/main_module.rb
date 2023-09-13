@@ -21,7 +21,7 @@ module MainModule
     app.create_book(publisher, cover_state, publish_date)
   end
 
-  def add_mucicalbum(app)
+  def add_music(app)
     puts "\n"
     puts 'Is it on spotify :'
     on_spotify = gets.chomp
@@ -37,3 +37,5 @@ module MainModule
     app.create_music_album(publish_date, on_spotify)
   end
 end
+
+
