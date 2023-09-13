@@ -20,4 +20,20 @@ module MainModule
     publish_date = gets.chomp
     app.create_book(publisher, cover_state, publish_date)
   end
+
+  def add_mucicalbum(app)
+    puts "\n"
+    puts 'Is it on spotify :'
+    on_spotify = gets.chomp
+    if %w[True true].include?(on_spotify)
+      on_spotify = true
+    elsif %w[False false].include?(on_spotify)
+      on_spotify = false
+    else
+      puts 'Invalid input'
+    end
+    puts ' Publish date [format year/month/date]:'
+    publish_date = gets.chomp
+    app.create_music_album(publish_date, on_spotify)
+  end
 end
