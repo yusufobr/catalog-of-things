@@ -11,4 +11,3 @@ class App
   include AuthorModule
   include GameModule
 end
-
