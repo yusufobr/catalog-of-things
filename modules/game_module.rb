@@ -4,6 +4,7 @@ module GameModule
   def create_game(publish_date, multiplayer, last_played_at)
     game = Game.new(publish_date, multiplayer, last_played_at)
     @games << game
+    save_game_to_file(@games)
   end
 
   def list_all_games
@@ -17,5 +18,9 @@ module GameModule
                 published at: #{game.publish_date}"
       end
     end
+  end
+
+  def save_game_to_file(games)
+    game_data.save_games_data(games)
   end
 end
