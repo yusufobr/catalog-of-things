@@ -1,5 +1,5 @@
-require_relative '../author'
-require_relative '../item'
+require_relative '../classes/games/author'
+require_relative '../classes/item'
 describe Author do
   context 'Test Author object' do
     let(:author) { Author.new('Jack', 'Harrison') }
