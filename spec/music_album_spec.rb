@@ -1,7 +1,6 @@
 require_relative '../classes/music/music_album'
 require_relative '../classes/item'
 
-
 describe MusicAlbum do
   it '#add album item' do
     date = '2020-08-08'
