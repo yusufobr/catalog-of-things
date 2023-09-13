@@ -23,8 +23,4 @@ class App
   include MusicAlbumModule
   include BookModule
   include LabelModule
-
 end
-
-app = App.new
-app.list_labels
