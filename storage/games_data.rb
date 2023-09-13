@@ -3,9 +3,8 @@ require 'json'
 class GameData
   DATA_FOLDER = 'json/'.freeze
   def save_games_data(games)
-
     File.open("#{DATA_FOLDER}games.json", 'w') do |file|
-      data_of_games = 
+      data_of_games =
         games.map do |game|
           {
             'multiplayer' => game.multiplayer,
@@ -14,7 +13,7 @@ class GameData
             'id' => game.id
           }
         end
-      
+
       file.write(JSON.pretty_generate(data_of_games))
     end
   end
