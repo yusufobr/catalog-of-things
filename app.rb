@@ -11,5 +11,4 @@ class App
   include AuthorModule
   include GameModule
 end
-app = App.new
-app.list_of_authors
+
