@@ -1,0 +1,45 @@
+{
+    "Labels": [
+      {
+        "title": "Inception",
+        "color": "blue"
+      },
+      {
+        "title": "The Godfather",
+        "color": "red"
+      },
+      {
+        "title": "Avatar",
+        "color": "green"
+      },
+      {
+        "title": "Pulp Fiction",
+        "color": "yellow"
+      },
+      {
+        "title": "The Dark Knight",
+        "color": "black"
+      },
+      {
+        "title": "Forrest Gump",
+        "color": "brown"
+      },
+      {
+        "title": "The Matrix",
+        "color": "green"
+      },
+      {
+        "title": "Schindler's List",
+        "color": "red"
+      },
+      {
+        "title": "Gladiator",
+        "color": "gold"
+      },
+      {
+        "title": "Jurassic Park",
+        "color": "green"
+      }
+    ]
+  }
+  
