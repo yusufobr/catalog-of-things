@@ -27,7 +27,6 @@
 
 In the ***Catalog of my possessions*** project, we developed a console application designed to assist users in maintaining a comprehensive inventory of their belongings, including books, music albums, movies, and games. This application's foundation is rooted in the UML class diagram depicted below. All data is stored in JSON files, but in addition, we've prepared a database with tables structured similarly to the classes in the program.
 <br/> <br/>
-<img src='.'>
 
 ## 🛠 Built With <a name="built-with"></a>
 
