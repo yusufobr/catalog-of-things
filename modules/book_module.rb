@@ -7,7 +7,8 @@ module BookModule
     save_book_to_file(@books)
   end
 
-  def list_books
+  def list_all_books
+    @books = @books_data.load_books
     if @books.empty?
       puts 'There are no books'
     else
@@ -18,6 +19,6 @@ module BookModule
   end
 
   def save_book_to_file(books)
-    @book_data.save_books(books)
+    @books_data.save_books(books)
   end
 end

@@ -8,19 +8,18 @@ module GameModule
   end
 
   def list_all_games
+    @games = @games_data.load_games_data
     if @games.empty?
       puts 'There are no games'
     else
       @games.each_with_index do |game, i|
-        last_date = game.last_played_at
-        puts "#{i + 1}) Multiplayer: #{game.multiplayer},
-                last played at: #{last_date},
-                published at: #{game.publish_date}"
+        last = game.last_played_at
+        puts "#{i + 1}) Multiplayer: #{game.multiplayer},last played: #{last},published at: #{game.publish_date}"
       end
     end
   end
 
   def save_game_to_file(games)
-    game_data.save_games_data(games)
+    @games_data.save_games_data(games)
   end
 end

@@ -1,7 +1,7 @@
 require_relative '../classes/music/genre'
 
 module GenreModule
-  def list_genre
+  def list_all_genre
     if @genres.empty?
       puts 'Genre is empty at the momment'
     else

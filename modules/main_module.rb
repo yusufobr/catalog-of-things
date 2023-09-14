@@ -1,5 +1,5 @@
 module MainModule
-  def add_game(app)
+  def add_games(app)
     puts "\n"
     puts 'Is game multiplayers [Yes/No]:'
     multiplayer_input = gets.chomp
@@ -7,10 +7,10 @@ module MainModule
     last_played_at_date = gets.chomp
     puts 'When was game published [Enter date format year/month/date]:'
     publish_date_input = gets.chomp
-    app.create_game(multiplayer_input, last_played_at_date, publish_date_input)
+    app.create_game(publish_date_input, multiplayer_input, last_played_at_date)
   end
 
-  def add_book(app)
+  def add_books(app)
     puts "\n"
     puts 'Who is the publisher [Enter Publisher Name]:'
     publisher = gets.chomp
@@ -37,5 +37,3 @@ module MainModule
     app.create_music_album(publish_date, on_spotify)
   end
 end
-
-
