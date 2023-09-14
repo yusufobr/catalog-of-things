@@ -1,9 +1,14 @@
 {
   "Books": [
     {
-      "publisher": "Youssef",
-      "cover_state": "Good",
-      "publish_date": "2020-02-21"
+      "publisher": "Jeff Bezos",
+      "cover_state": "good",
+      "publish_date": "2008-01-02"
+    },
+    {
+      "publisher": "Elon Musk",
+      "cover_state": "bad",
+      "publish_date": "2022-01-22"
     }
   ]
 }

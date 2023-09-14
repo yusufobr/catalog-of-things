@@ -1,7 +1,7 @@
 require_relative '../classes/books/label'
 
 module LabelModule
-  def list_labels
+  def list_all_labels
     if @labels.empty?
       puts 'There are no labels'
     else
