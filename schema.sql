@@ -19,4 +19,19 @@ CREATE TABLE musicAlbum (
     FOREIGN KEY(item_id) REFERENCES Item(id)
 );
 
-
+CREATE TABLE book (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    item_id INTEGER,
+    publish_date DATE,
+    archive BOOLEAN,
+    publisher VARCHAR(150),
+    cover_state VARCHAR(150),
+    FOREIGN KEY(item_id) REFERENCES Item(id)
+);
+CREATE TABLE labels (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    item_id INTEGER,
+    color VARCHAR(150),
+    title VARCHAR(150),
+     FOREIGN KEY(item_id) REFERENCES Item(id)
+);
