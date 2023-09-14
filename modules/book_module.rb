@@ -13,7 +13,7 @@ module BookModule
       puts 'There are no books'
     else
       @books.each_with_index do |book, i|
-        puts "#{i + 1}) Publisher: #{book.publisher}, Cover state: #{book.cover_state}, Published: #{book.publish_date}"
+        puts "\n#{i + 1}----- \nPublisher: #{book.publisher},\nCover state: #{book.cover_state},\nPublished: #{book.publish_date}\n"
       end
     end
   end
