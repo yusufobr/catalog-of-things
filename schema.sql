@@ -35,3 +35,19 @@ CREATE TABLE labels (
     title VARCHAR(150),
      FOREIGN KEY(item_id) REFERENCES Item(id)
 );
+
+CREATE TABLE game (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    publish_date DATE,
+    item_id INTEGER,
+    last_played DATE,
+    multiplayer VARCHAR(150),
+    FOREIGN KEY(item_id) REFERENCES Item(id)
+);
+CREATE TABLE author (
+     id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+     first_name VARCHAR(150),
+     last_name VARCHAR(150),
+     item_id INTEGER,
+     FOREIGN KEY(item_id) REFERENCES Item(id)
+);
