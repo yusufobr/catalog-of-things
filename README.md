@@ -73,7 +73,11 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
+<<<<<<< HEAD
   git clone git@github.com:yusufobr/catalog-of-things.git
+=======
+  gh repo clone ` git@github.com:yusufobr/catalog-of-things.git`
+>>>>>>> 9ddfc7051c4d0397df092451139f31a5432df8f6
 ```
 
 ### Installation

@@ -2,7 +2,7 @@ require 'json'
 require_relative '../classes/music/genre'
 
 class GenreData
-  DATA_FOLDER = 'JSON/'.freeze
+  DATA_FOLDER = 'json/'.freeze
 
   def obtain_genre
     return [] unless File.exist?("#{DATA_FOLDER}genre.json")
