@@ -4,6 +4,7 @@ require_relative 'modules/main_module'
 class Main
   include MainModule
   def lists_option
+    puts '*********************'
     puts '1. Add Book'
     puts '2. Add Game'
     puts '3. Add music Album'
@@ -14,6 +15,7 @@ class Main
     puts '8. List all labels'
     puts '9. List all authors'
     puts '10. exit'
+    puts '**********************'
   end
 
   def main
