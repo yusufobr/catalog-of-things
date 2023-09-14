@@ -38,7 +38,7 @@ In the ***Catalog of my possessions*** project, we developed a console applicati
 
 ### Video presentation
 
-[Click here to see our presenation]()
+[Click here to see our presenation](https://drive.google.com/file/d/1Nu9iBnpbLzxzZ5REtNEhvF016mjSMgU7/view?usp=sharing)
 
 <!-- Features -->
 
